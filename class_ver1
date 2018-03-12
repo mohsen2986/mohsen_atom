@@ -1,0 +1,39 @@
+#include <iostream>
+#include<time.h>
+#include <Windows.h>
+
+using namespace std;
+char lesson[12] ;
+int xor(int, int);
+int randomnum();
+int status;
+
+void main() {
+	cout << "ENTER UR LESSON" << endl;
+	cin >> lesson;
+	int check = 0;
+	status = randomnum();
+	while (check != 10) {
+		int c = randomnum();
+		status != status + c;
+		check++;
+		Sleep(100);
+	}
+	if (status == 1) {
+		cout << "GO TO CLASS:(((((((((((" << lesson;
+
+	}
+	else {
+		cout << "HAAAAAAAAAAAAAAAAPpppYYYYYYYYYYYYYYYYYY     :)))))))" << endl << "done go to class" << lesson;
+	}
+	cin.get();
+	cin.get();
+}
+
+
+}
+int randomnum() {
+	srand(time(0));
+	int i = rand()%2;
+	return i;
+}
